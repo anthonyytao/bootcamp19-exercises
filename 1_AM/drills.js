@@ -62,9 +62,12 @@ const zip = (arr1, arr2) => {
       newArray.push(arr2[i]);
       finalArray.push(newArray);
     }
+    console.log(finalArray);
     return finalArray;
   }
 };
+
+zip([1, 2, 3], [5, 3, 1])
 
 const unzip = arr => {
   // TODO - Write a function which does the opposite of `zip()`

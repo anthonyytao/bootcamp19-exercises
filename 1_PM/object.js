@@ -3,5 +3,20 @@
 // HINT: recursion may help here
 
 const hasFalsyValue = obj => {
-  return false;
+  for (key in obj) {
+    if (typeof obj[key] === "object") {
+      hasFalsyValue(obj[key]);
+    }
+    else if (obj[key] == false) {
+      return true;
+    }
+  }
+  return false
 };
+
+const test = {
+  a:1,
+  b:false,
+}
+
+console.log(hasFalsyValue(test));

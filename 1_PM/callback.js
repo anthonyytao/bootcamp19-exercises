@@ -8,11 +8,17 @@ const coinToss = (guess, callback) => {
   callback(didWin);
 };
 
+const tellUser = (didWin) => {
+  console.log(didWin);
+}
+
 const getUser = callback => {
   const user = {
     firstName: "John",
     lastName: "Doe",
     guess: Math.round(Math.random())
   };
-  callback(user);
+  callback(user["guess"],tellUser);
 };
+
+getUser(coinToss);

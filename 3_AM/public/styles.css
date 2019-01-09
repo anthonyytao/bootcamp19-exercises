@@ -1,0 +1,25 @@
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a.navbar {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+footer {
+  font-size: 75%;
+  margin-top: 15px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
